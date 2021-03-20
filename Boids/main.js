@@ -129,8 +129,7 @@ class Boids {
     coherence = boid => {
         let { boids, visualRange } = this;
 
-        const centeringFactor = 0.005; // adjust velocity by this %
-        // const centeringFactor = 1; // adjust velocity by this %
+        const centeringFactor = 0.005;
 
         let avg = { x: 0, y: 0 };
         let boidsInSight = boids.filter(b => {
